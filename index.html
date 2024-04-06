@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MITS-BOT</title>
+    <link rel="shortcut icon" href="https://mits.ac.in/images/mits-favicon.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 12px;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .text-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: justify;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        #right-image {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .button {
+                margin: 10px 5px;
+            }
+        }
+    </style>
+ 
+     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/e6de2ac1-86fb-4a59-8da9-981919df2e79/webchat/config.js" defer></script>
+</head>
+<body>
+
+<header>
+    <img id="logo" src="Images/mitslogo.png" alt="MITS Logo">
+    <h1>Madanapalle Institute of Technology & Science</h1>
+    <div class="button-container">
+        <a href="#" class="button">Home</a>
+        <div class="dropdown">
+            <a href="#" class="button">Student</a>
+            <div class="dropdown-content">
+                <a href="signup.php" id="student-signup">Signup</a>
+                <a href="login.php" id="student-login">Login</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="button">Admin</a>
+            <div class="dropdown-content">
+                <a href="admin_signup.php" id="admin-signup">Signup</a>
+                <a href="admin_login.php" id="admin-login">Login</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="text-container">
+    <h1>Welcome To MITS</h1>
+    <p>
+        Madanapalle Institute of Technology & Science, established in 1998, is located in the picturesque and pleasant environs of Madanapalle. It is ideally situated on a sprawling 26.17-acre campus on Madanapalle - Anantapur Highway (NH-205) near Angallu, about 10 km away from Madanapalle.
+    </p>
+    <p>
+        MITS, originated under the auspices of Ratakonda Ranga Reddy Educational Academy, has been striving conscientiously to develop it as one of the best centers of Academic Excellence in India. The Institution's profile is firmly based on strategies and action plans that match the changing demands of the nation and the students’ fraternity.
+    </p>
+    <p>
+        MITS enjoys constant support and patronage of NRI's with distinguished academic traditions and vast experience in Engineering & Technology.
+    </p>
+    <img id="right-image" src="Images/clg_bg.jpg" alt="Right Image">
+</div>
+
+ 
+</body>
+</html>
